@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+    <variable
+      name="model"
+      type="com.asj.weather.model.WeatherModel" />
+  </data>
+
+  <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.asj.weather.util.AsjProgressView
+      android:id="@+id/goJekProgressView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+    <include
+      android:id="@+id/errorView"
+      layout="@layout/error_view"
+      android:visibility="gone" />
+
+    <include
+      android:id="@+id/weatherView"
+      layout="@layout/weather_view"
+      bind:model = "@{model}"
+      android:visibility="gone" />
+
+  </android.support.constraint.ConstraintLayout>
+</layout>

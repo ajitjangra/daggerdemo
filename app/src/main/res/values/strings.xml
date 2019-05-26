@@ -1,0 +1,11 @@
+<resources>
+  <string name="app_name">Weather Info</string>
+
+  <string name="error_view_act">RETRY</string>
+  <string name="error_view_msg">Something went wrong at our end</string>
+  <string name="ok">OK</string>
+  <string name="cancel">CANCEL</string>
+  <string name="permission_msg">These permissions are mandatory for the application. Please allow access.</string>
+
+
+</resources>
